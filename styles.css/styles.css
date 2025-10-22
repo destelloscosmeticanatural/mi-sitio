@@ -1,0 +1,162 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #FFF3E0, #FFE7CC);
+    color: #4B2E2E;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #F7C7B8, #FFD6A5);
+    color: #5A2D2D;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 4px rgba(255, 215, 0, 0.7);
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Navegación */
+nav {
+    background: #FFB6A0;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+nav a {
+    margin: 0 20px;
+    color: #4B2E2E;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #5A2D2D;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #FFD700;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    border-radius: 15px;
+    background: #FFF9F0;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+.product-card h3 {
+    margin-top: 0;
+    color: #B85C4B;
+    font-size: 1.3em;
+    text-shadow: 0 0 5px #FFD700;
+}
+
+/* Contacto y redes */
+.contact a, .social a {
+    color: #B85C4B;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.contact a:hover, .social a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 5px #FFD700;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #F7C7B8, #FFD6A5);
+    color: #5A2D2D;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    box-shadow: 0 -5px 15px rgba(255, 215, 0, 0.3);
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Destellos dorados flotando */
+.spar
+/* Destellos dorados flotando */
+.sparkle {
+    position: fixed;
+    background: radial-gradient(circle, #FFD700 0%, rgba(255, 223, 0, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkleAnim 3s linear forwards;
+    z-index: 9999;
+}
+
+@keyframes sparkleAnim {
+    0% { transform: translateY(0) scale(0); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: translateY(-50px) scale(0); opacity: 0; }
+}
+
